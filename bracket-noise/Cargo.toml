@@ -1,0 +1,22 @@
+[package]
+name = "bracket-noise"
+version = "0.7.0"
+authors = ["Herbert Wolverson <herberticus@gmail.com>"]
+edition = "2018"
+publish = true
+description = "Rust port of Auburn's amazing FastNoise library. Part of the bracket-lib family."
+homepage = "https://github.com/thebracket/rltk_rs"
+repository = "https://github.com/thebracket/rltk_rs"
+readme = "README.md"
+keywords = ["roguelike", "gamedev", "noise", "perlin", "simplex"]
+categories = ["game-engines", "random"]
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bracket-random = { path = "../bracket-random" }
+
+[dev-dependencies]
+crossterm = "0.16.0"
+bracket-color = { path = "../bracket-color" }
